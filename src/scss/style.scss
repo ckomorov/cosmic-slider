@@ -1,4 +1,5 @@
-
+@import "_variables";
+@import "_placeholders";
 
 
 // bootstrap 
@@ -14,5 +15,7 @@
 @import "node_modules/bootstrap/scss/utilities/display";
 
 @import "_base";
+@import "components/_text";
+@import "components/_buttons";
 @import "components/_page-slider";
 

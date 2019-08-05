@@ -1,4 +1,54 @@
 
-.page-slider {
+.page-slide {
 	height: 100vh;
+}
+
+.page-slide-1-top {
+	position: relative;
+	background: url(../img/spaceman.png) top right no-repeat;
+	background-size: contain;
+	border-bottom: 1px solid rgba(#fff, .1);
+	padding-left: 15px;
+	margin-bottom: 35px;
+
+
+	&:after {
+		@extend %pseudo;
+		background: $color-accent;
+		bottom: -6px;
+		left: 15px;
+		height: 6px;
+		width: 30px;
+	}
+
+	h1 {
+		padding-top: 60px;
+		max-width: 440px;
+		padding-bottom: 100px;	
+	}
+
+	.btn-main {
+		margin-bottom: 100px;
+	}
+}
+
+.page-slide-1-top.left:after{
+	left: 15px;
+}
+.page-slide-1-top.middle:after{
+	left: 35%;
+}
+.page-slide-1-top.right:after{
+	left: 70%;
+}
+
+
+.page-slide-1-bottom {
+	padding-left: 15px;
+}
+
+
+.slick-dots {
+	position: absolute;
+	top: 40vh;
 }
