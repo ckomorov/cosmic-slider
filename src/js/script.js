@@ -30,7 +30,7 @@ function initPageSlider() {
 	});
 
 	chooseTextOnFirstSlide();
-	
+
 }
 
 
@@ -54,12 +54,31 @@ function chooseTextOnFirstSlide() {
 	});
 }
 
+function initWorkSlider() {
+	const $workSlider = $('.js-work-slider'),
+		  $slide1 = $workSlider.find('.js-slide-1').html(),
+		  $slide2 = $workSlider.find('.js-slide-2').html(),
+		  $slide3 = $workSlider.find('.js-slide-3').html();
 
+	$workSlider.html(' ');
+	$('<div>').appendTo($workSlider).append($slide1).append($slide2).append($slide3);
+	$('<div>').appendTo($workSlider).append($slide2).append($slide3).append($slide1);
+	$('<div>').appendTo($workSlider).append($slide3).append($slide1).append($slide2);	
+	$workSlider.slick({
+		fade: true,
+		prevArrow: `<span class="work-arrow is-prev">
+                  <img src="./build/img/arrow_rev.svg" width="18" height="14">
+                </span>`,
+    	nextArrow: `<span class="work-arrow is-next">
+                  <img src="./build/img/arrow.svg" width="18" height="14">
+                </span>`	
+	});
+}
 
 $('document').ready(function() {
 
 	initPageSlider();
-
+	initWorkSlider();
 	
 	
 
