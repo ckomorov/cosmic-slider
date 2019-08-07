@@ -52,3 +52,22 @@
 	position: absolute;
 	top: 40vh;
 }
+
+.page-slide-3-top {
+	position: relative;
+	background: url(../img/woman.png) top right no-repeat;
+	background-size: contain;
+	padding-left: 15px;
+	margin-bottom: 35px;
+
+
+	h1 {
+		padding-top: 60px;
+		max-width: 440px;
+		padding-bottom: 100px;	
+	}
+
+	.btn-main {
+		margin-bottom: 100px;
+	}
+}

@@ -35,3 +35,32 @@
     margin-left: 15px;
   }
 }
+
+.btn-career {
+  @extend %btn-base;
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0 13px;
+  transition: .4s all;
+
+  &:hover {
+    color: $color-accent;
+    &:before {
+      left: -10px;
+    }
+  }
+
+  span,
+  img {
+    position: relative;
+    z-index: 1;
+  }
+
+  img {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+
+}

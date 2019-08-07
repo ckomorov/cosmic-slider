@@ -1,0 +1,40 @@
+.about-widget {
+	width: 172px;
+	height: 95px;
+	border: 13px solid $color-accent; 
+}
+
+.text-title-about {
+	margin-top: -10px;
+	padding-left: 15px;
+}
+
+.col-md-3 {
+	padding: 0;
+}
+
+.about-widget-link {
+	color: #fff;
+	transition: .4s all;
+
+	&:hover {
+		color: $color-accent;
+		text-decoration: none;
+
+		.about-widget {
+			border-color: #fff;
+		}
+	}
+}
+
+#about-one {
+	background: url(../img/winners.png);
+}
+
+#about-two {
+	background: url(../img/philosophy.png);
+}
+
+#about-three {
+	background: url(../img/history.png);
+}
